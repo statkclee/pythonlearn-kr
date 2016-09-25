@@ -2,7 +2,12 @@
 layout: base
 ---
 {% include episode_navbar.html episode_navbar_title=true %}
-{% include episode_overview.html %}
+
+{% comment %} {% include episode_overview.html %} {% endcomment %}
+
 {{content}}
-{% include episode_keypoints.html %}
+
+{% comment %} {% include episode_keypoints.html %} {% endcomment %}
+
+
 {% include episode_navbar.html episode_navbar_title=false %}
