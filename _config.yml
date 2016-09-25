@@ -6,10 +6,10 @@
 carpentry: "swc"
 
 # Overall title for pages.
-title: "Lesson Title"
+title: "모두를 위한 파이썬"
 
 # Contact email address.
-email: lessons@software-carpentry.org
+email: kwangchun.lee.7@gmail.com
 
 #------------------------------------------------------------
 # Generic settings (should not need to change).
@@ -20,7 +20,7 @@ kind: "lesson"
 
 # Magic to make URLs resolve both locally and on GitHub.
 # See https://help.github.com/articles/repository-metadata-on-github-pages/.
-repository: <USERNAME>/<PROJECT>
+repository: statkclee/pythonlearn-kr
 
 # Sites.
 amy_site: "https://amy.software-carpentry.org/workshops"

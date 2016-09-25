@@ -17,7 +17,7 @@ permalink: /setup/
 $ sudo apt-get install texlive-full
 $ sudo apt-get install pandoc
 ~~~
-{.shell}
+
 
 맥사용자는 다음 웹사이트를 참조하여 필요한 소프트웨어를 설치한다.
 
@@ -50,7 +50,7 @@ $ curl -O http://kindlegen.s3.amazonaws.com/kindlegen_linux_2.6_i386_v2_9.tar.gz
 $ tar xfv kindlegen_linux_2.6_i386_v2_9.tar.gz 
 $ cp kindlegen /usr/local/bin
 ~~~
-{.shell}
+
 
 #### 1.3. 한국어 번역
 
@@ -82,14 +82,14 @@ $ cp kindlegen /usr/local/bin
 ~~~ 
 $ bash book.sh
 ~~~ 
-{.shell}
+
 
 HTML 웹사이트 `.html` 파일을 생성하려면 다음과 같이 명령어를 입력하면 `html` 디렉토리가 생성되고 그 내부에 `.html` 파일이 저장된다.
 
 ~~~ 
 $ bash html.sh
 ~~~ 
-{.shell}
+
 
 `.epub`, `.mobi` 확장자를 갖는 전자책을 생성하고 한다면 [Calibre](http://www.calibre-ebook.com/) 소프트웨어를 사용해서 제작한다.
 
@@ -123,7 +123,7 @@ $ sudo apt-get install texlive-latex-extra
 $ sudo apt-get install hevea
 $ sudo apt-get install imagemagick
 ~~~ 
-{.shell}
+
 
 #### 1.3. 한국어 번역 파이썬2 작업환경 
 
