@@ -2,7 +2,7 @@
 % Exploring Data Using Python 3
 % Charles R. Severance
 
-왜... Why should you learn to write programs?
+왜... 프로그램을 작성해야 할까요? 
 =======================================
 
 Writing programs (or programming) is a very creative and rewarding
