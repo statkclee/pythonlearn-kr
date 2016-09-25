@@ -62,20 +62,20 @@ RMD_DST = $(patsubst _episodes_rmd/%.Rmd,_episodes/%.md,$(RMD_SRC))
 # Lesson source files in the order they appear in the navigation menu.
 MARKDOWN_SRC = \
   index.md \
-  CONDUCT.md \
-  setup.md \
   $(wildcard _episodes/*.md) \
-  reference.md \
+  python2.md \
+  python3-eng.md \
+  python3.md \
   $(wildcard _extras/*.md) \
   LICENSE.md
 
 # Generated lesson files in the order they appear in the navigation menu.
 HTML_DST = \
   ${DST}/index.html \
-  ${DST}/conduct/index.html \
-  ${DST}/setup/index.html \
   $(patsubst _episodes/%.md,${DST}/%/index.html,$(wildcard _episodes/*.md)) \
-  ${DST}/reference/index.html \
+  ${DST}/python2/index.html \
+  ${DST}/python3-eng/index.html \
+  ${DST}/python3/index.html \
   $(patsubst _extras/%.md,${DST}/%/index.html,$(wildcard _extras/*.md)) \
   ${DST}/license/index.html
 
