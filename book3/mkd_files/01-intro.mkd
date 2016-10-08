@@ -1,45 +1,29 @@
-% Python for Everybody 
+% Python for Everybody
 % Exploring Data Using Python 3
 % Charles R. Severance
 
-왜... Why should you learn to write programs?
+왜 프로그래밍을 배워야 하는가?
 =======================================
 
-Writing programs (or programming) is a very creative and rewarding
-activity. You can write programs for many reasons, ranging from making
-your living to solving a difficult data analysis problem to having fun
-to helping someone else solve a problem. This book assumes that
-*everyone* needs to know how to program, and that once you know how to
-program you will figure out what you want to do with your newfound
-skills.
+프로그램을 작성하는일 (혹은 프로그래밍) 은 아주 창의적이며 가치있는 일이다.
+우리가 프로그램을 작성하는 이유는 직업으로서 복잡한 자료분석이 필요하기 때문이거나, 단지 재미로서 누군가의 어려움을 해결해주기위한 일에 이르기까지 다양하다.
+이 책은 우리들 *모두* 가 프로그래밍을 배워야 할 필요가 있다는것을 전제로 하며, 학습을 마치고난 후 에는 새롭게 배운 이 기술을 가지고 어떤 일을 하고 싶은지 생각이 피어오를것이다.
 
-We are surrounded in our daily lives with computers ranging from laptops
-to cell phones. We can think of these computers as our "personal
-assistants" who can take care of many things on our behalf. The hardware
-in our current-day computers is essentially built to continuously ask us
-the question, "What would you like me to do next?"
+랩탑에서 휴대전화에 이르기까지, 우리의 일상은 컴퓨터들로 둘러싸여 있다.
+우리를 대신해 많은 것들을 처리해 주는 이러한 컴퓨터를 개인비서(Personal Assistants)쯤으로 생각할수도 있다.
+일상의 컴퓨터, 그 일부를 구성하는 하드웨어는 본질적으로 다음과 같이 질문을 끊임없이 하도록 만들어져 있다. "다음으로 해야 할 일은 무엇입니까?"
 
 ![Personal Digital Assistant](height=1.0in@../images/pda)
 
-Programmers add an operating system and a set of applications to the
-hardware and we end up with a Personal Digital Assistant that is quite
-helpful and capable of helping us do many different things.
+프로그래머는 이러한 하드웨어에 운영체제와 여러 응용프로그램을 추가함으로써 사람을 도와 다른 많은 것들을 할 수 있도록 하는 개인 휴대 정보 단말(Personal Digital Assistant, PDA)의 탄생에 까지 이르도록 하였다.
 
-Our computers are fast and have vast amounts of memory and could be very
-helpful to us if we only knew the language to speak to explain to the
-computer what we would like it to "do next". If we knew this language,
-we could tell the computer to do tasks on our behalf that were
-repetitive. Interestingly, the kinds of things computers can do best are
-often the kinds of things that we humans find boring and mind-numbing.
+만약 컴퓨터가 알아 듣을수 있는 언어로 우리가 "다음으로 하려는 것을" 설명할 수 있다면, 컴퓨터는 매우 빠르고 많은것을 기억할 수 있기 때문에 매우 유용할 것이다.
+만약 우리가 이런 컴퓨터 언어를 알고 있다면, 사람을 대신해서 반복적인 작업을 하도록 컴퓨터에게 지시할 수도 있다.
+흥미롭게도 컴퓨터가 가장 잘 할수 있는 일들은 사람들이 지루하거나, 하고 있으면 정신이 멍해지는 대게는 그런 일들이다.
 
-For example, look at the first three paragraphs of this chapter and tell
-me the most commonly used word and how many times the word is used.
-While you were able to read and understand the words in a few seconds,
-counting them is almost painful because it is not the kind of problem
-that human minds are designed to solve. For a computer the opposite is
-true, reading and understanding text from a piece of paper is hard for a
-computer to do but counting the words and telling you how many times the
-most used word was used is very easy for the computer:
+예를들면, 이번 장의 첫 3문단에서 가장 많이 사용되 단어가 어떤 단어이고, 몇번이나 사용되었는가 찾는 일이다.
+여러분은 여러개의 단어들을 단지 몇 초안에 읽고 이해할수 있겠지만, 아마도 각 단어들의 빈도수를 세는 일은 고통스러울 것이다. 왜냐하면, 사람의 두뇌는 이러한 종류의 문제에 맞게 만들어 진것이 아니기 때문이다.
+컴퓨터에게는 반대로, 사람들처럼 종이에 쓰인 글을 읽고 이해하는것은 어려운 일이지만, 각 단어들의 사용빈도수를 세어 가장 많이 사용된 단어가 몇번 사용되었는지 알려주는 일은 아주 간단한 일이다:
 
 ~~~~ {.python}
     python words.py
@@ -47,44 +31,24 @@ most used word was used is very easy for the computer:
     to 16
 ~~~~
 
-Our "personal information analysis assistant" quickly told us that the
-word "to" was used sixteen times in the first three paragraphs of this
-chapter.
+우리들의 "정보분석 보조자" 는 이번 장의 첫 3문단에서 단어 "to"가 가장 많이 사용되었고, 16번 언급되었다고 바로 답을 준다.
 
-This very fact that computers are good at things that humans are not is
-why you need to become skilled at talking "computer language". Once you
-learn this new language, you can delegate mundane tasks to your partner
-(the computer), leaving more time for you to do the things that you are
-uniquely suited for. You bring creativity, intuition, and inventiveness
-to this partnership.
+이러한 사람이 잘 하지 못하는것을 컴퓨터가 잘 할 수 있다는 사실이 왜 "컴퓨터 언어"에 능숙해져야 하는가를 잘 뒷받침하고 있다.
+이 새로운 언어(Python)를 배우고 나면, 지루하고 반복되는 일은 우리의 파트너(Computer)에게 맡기고, 우리는 사람에게 적합한 일을 하는데 보다 많은 시간을 할애할 수 있게된다.
+여러분은 컴퓨터와의 관계에서 독창성, 직관 그리고 창의성의 영역을 맡아 나아갈것이다.
 
-Creativity and motivation
+창의성과 동기
 -------------------------
 
-While this book is not intended for professional programmers,
-professional programming can be a very rewarding job both financially
-and personally. Building useful, elegant, and clever programs for others
-to use is a very creative activity. Your computer or Personal Digital
-Assistant (PDA) usually contains many different programs from many
-different groups of programmers, each competing for your attention and
-interest. They try their best to meet your needs and give you a great
-user experience in the process. In some situations, when you choose a
-piece of software, the programmers are directly compensated because of
-your choice.
+이 책은 업으로서 프로그래밍을 하는 사람을 위한 것은 아니지만, 직업적으로 프로그램을 만드는 일은 금전적인 면이나 개인적인 면에서 꽤 매력적인 일이다. 다른사람이 사용할 수 있도록 유용하면서 세련되고 똑똑한 프로그램을 만드는 것은 매우 창의적인 활동이다. 사용자의 관심과 시선을 차지하기 위해 여러 그룹의 프로그래머들이 경쟁적으로 작성한 다양한 종류의 프로그램이 바로 여러분의 컴퓨터나 개인 휴대 정보 단말기(Personal Digital Assistant, PDA)에 담겨있다. 프로그래머들은 개발과정에서 사용자의 원하는 바를 충족시키고 훌륭한 사용자 경험을 제공하려고 노력한다. 대게의 경우에 있어서 사용자의 소프트웨어 선택이 프로그래머에게는 금전적 보상으로 연결되게 된다.
 
-If we think of programs as the creative output of groups of programmers,
-perhaps the following figure is a more sensible version of our PDA:
+만약 프로그램을 프로그래머 그룹의 창의적인 결과물로 생각해본다면, 아마도 다음 그림이 좀더 의미있는 PDA로 보일것이다.
 
 ![Programmers Talking to You](height=1.0in@../images/pda2)
 
-For now, our primary motivation is not to make money or please end
-users, but instead for us to be more productive in handling the data and
-information that we will encounter in our lives. When you first start,
-you will be both the programmer and the end user of your programs. As
-you gain skill as a programmer and programming feels more creative to
-you, your thoughts may turn toward developing programs for others.
+지금 우리의 동기는 돈을 번다던가 사용자를 기쁘게 한다기 보다, 일상생활에서 마주치게될 데이터나 정보를 다룰때 좀 더 생산적이려는데 있다. 프로그래밍을 배우기 시작할때, 여러분은 프로그래머이면서 동시에 자신이 만든 프로그램의 사용자가 될 것이다. 프로그래머로서 기술을 습득하고 프로그래밍이 좀 더 창의적으로 느껴진다면, 여러분은 다른사람을 위해 프로그램을 개발할 준비가 된 것이다.
 
-Computer hardware architecture
+컴퓨터 하드웨어 아키텍처
 ------------------------------
 
 \index{hardware}
@@ -242,7 +206,7 @@ that we can even tell it what to say by giving it a message in quotes:
 ~~~~
 
 And we have even written our first syntactically correct Python
-sentence. Our sentence starts with the function *print* 
+sentence. Our sentence starts with the function *print*
 followed by a string of text of our choosing enclosed in single quotes.
 
 Conversing with Python
@@ -661,7 +625,7 @@ written programs and rejects them as "unfit" just to torment us.
     Traceback (most recent call last):
     File "<stdin>", line 1, in <module>
     NameError: name 'primt' is not defined
-    
+
     >>> I hate you Python!
       File "<stdin>", line 1
         I hate you Python!
@@ -931,4 +895,3 @@ Memory, (4) Input Device, and (5) Output Device. For example, "What is
 the human equivalent to a Central Processing Unit"?
 
 Exercise 9: How do you fix a "Syntax Error"?
-
